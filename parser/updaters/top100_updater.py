@@ -1,5 +1,12 @@
-from typing import List
+"""
+Module: top100_updater
+This module defines the `Top100Updater` class, which handles the update of the top 100 repositories in the database.
 
+The updater ensures the database reflects the latest information about the top repositories, including:
+1. Inserting or updating repository records with their details.
+2. Recalculating repository rankings based on the number of stars.
+"""
+from typing import List
 from asyncpg import Pool, Connection
 
 from parser.repo_info.schemas import RepositoryModel
@@ -77,4 +84,3 @@ class Top100Updater:
                 await self._insert_or_update_records(conn, repositories)
                 # Recalculate positions
                 await self._recalculate_positions(conn)
-

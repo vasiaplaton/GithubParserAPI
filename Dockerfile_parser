@@ -11,13 +11,13 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Copy project files
-COPY  /app
+COPY . /app
 
 # Install project dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the cron job file into the container
-COPY crontab /etc/cron.d/parser-cron
+COPY parser/crontab /etc/cron.d/parser-cron
 
 # Give execution rights to the cron job file
 RUN chmod 0644 /etc/cron.d/parser-cron
