@@ -1,0 +1,29 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Install cron and any other necessary dependencies
+RUN apt-get update && apt-get install -y cron && apt-get clean
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+
+# Create app directory
+WORKDIR /app
+
+# Copy project files
+COPY  /app
+
+# Install project dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the cron job file into the container
+COPY crontab /etc/cron.d/parser-cron
+
+# Give execution rights to the cron job file
+RUN chmod 0644 /etc/cron.d/parser-cron
+
+# Apply the cron job
+RUN crontab /etc/cron.d/parser-cron
+
+# Create a log file for cron
+RUN touch /var/log/cron.log
