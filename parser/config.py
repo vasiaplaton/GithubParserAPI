@@ -8,19 +8,19 @@ environment variable management and validation.
 from typing import Optional
 from pydantic.v1 import BaseSettings
 
+from settings.settings import Settings
 
-class Settings(BaseSettings):
+
+class ParserSettings(Settings):
     """
     Settings class for application configuration.
 
     Attributes:
-        gitlab_base_url (Optional[str]): Base URL for the GitLab API. Defaults to "https://api.github.com".
-        gitlab_token (Optional[str]): Personal Access Token for authenticating with the GitLab API.
-        database_url (str): Database connection URL.
+        github_base_url (Optional[str]): Base URL for the GitHub API. Defaults to "https://api.github.com".
+        github_token (Optional[str]): Personal Access Token for authenticating with the GitHub API.
     """
-    gitlab_base_url: Optional[str] = "https://api.github.com"
-    gitlab_token: Optional[str] = None
-    database_url: str
+    github_base_url: Optional[str] = "https://api.github.com"
+    github_token: Optional[str] = None
 
 
-settings = Settings()
+settings = ParserSettings()

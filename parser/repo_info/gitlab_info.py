@@ -66,7 +66,7 @@ class GitlabInfoGetter(RepositoryInfoGetter):
             data = response.json()
 
         main_logger.debug("Fetched %d repositories", len(data.get("items", [])))
-
+        # print(data.get("items"))
         return [
             RepositoryModel(
                 name=repo["name"],
@@ -74,7 +74,8 @@ class GitlabInfoGetter(RepositoryInfoGetter):
                 stars=repo["stargazers_count"],
                 forks=repo["forks_count"],
                 issues=repo["open_issues_count"],
-                language=repo.get("language")
+                language=repo.get("language"),
+                watchers=repo["watchers_count"]
             )
             for repo in data.get("items", [])
         ]

@@ -5,37 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afa1341c-7549-43ba-9d8e-cf655eb9f413" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env_example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/GitlabParser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile_parser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/project_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/repo_info/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/repo_info/gitlab_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/repo_info/repository_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/repo_info/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/updaters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/updaters/activity_updater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/updaters/top100_updater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/repositories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_imgs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/schemas/activity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/schemas/repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/services/activity_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/services/repository_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env_example" beforeDir="false" afterPath="$PROJECT_DIR$/.env_example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile_parser" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile_parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/crontab" beforeDir="false" afterPath="$PROJECT_DIR$/parser/crontab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/repo_info/gitlab_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/repo_info/gitlab_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/repo_info/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/repo_info/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/updaters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/updaters/activity_updater.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/updaters/top100_updater.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +51,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2pwWmF5WaJgSgpoMV4DyMlptAQ6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,6 +76,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$/app/services" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/parser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

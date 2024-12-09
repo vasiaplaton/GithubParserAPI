@@ -31,6 +31,7 @@ class RepositoryModel(BaseModel):
     stars: int
     forks: int
     issues: int
+    watchers: int
     language: Optional[str] = None
 
 
